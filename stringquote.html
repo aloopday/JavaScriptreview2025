@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>JavaScript Data Types</h1>
+        <h2>JavaScript Strings</h2>
+        <p> Strings are written with quotes. You can use single or double quotes:</p>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <script>
+            let fruitName ="Apple";
+            let fruitName1="Peach";
+            document.getElementById("demo").innerHTML=
+            fruitName+"<br>"+
+            fruitName1;
+            let answer="you're a good man.";
+            let answer1='This is my "home".';
+            let answer2="This is a very nice 'Master'.";
+            document.getElementById("demo1").innerHTML=
+            answer+"<br>"+
+            answer1+"<br>"+
+            answer2;
+            const x=3;
+            const y=3.14;
+            const z=56;
+            document.getElementById("demo2").innerHTML=
+            x+"<br>"+
+            y+"<br>"+
+            z;
+
+            let p=123e5;
+            let q=123e-5;
+            document.getElementById("demo3").innerHTML=
+            p+"<br>"+q;
+            
+            let houseName;
+            document.getElementById("demo5").innerHTML=
+            houseName;
+            document.getElementById("demo6").innerHTML=
+            typeof houseName;
+
+            let car =""; // The value is "", the typeof is "string"
+        </script>
+    </body>
+</html>
