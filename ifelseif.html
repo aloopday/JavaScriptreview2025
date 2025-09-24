@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title> Greeting </title>
+    </head>
+    <body>
+        <p>
+            The example of "if-else if-else;"
+        </p>
+        <p id="demo"></p>
+        <script>
+            let hours=new Date().getHours();
+            let greeting;
+            if(hours<12){
+                greeting="Good morning"
+            }else if(hours<20){
+                greeting="Good day!"
+            }else{
+                greeting="Good evening!"
+            }
+            document.getElementById("demo").innerHTML=greeting;
+        </script>
+    </body>
+</html>

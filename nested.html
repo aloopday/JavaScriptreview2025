@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>Nested if</p>
+       
+        <p>Nested if statements can make your code more complex.
+A better solution is to use the logical AND operator:</p>
+ <p id="demo"></p>
+        <script>
+            let age=17;
+            let country="USA";
+            let txt="You can not Drive";
+            if(country=="USA" & age>=16){
+                txt="You can drive."
+            }
+           /* if(country=="USA"){
+                if(age>=16){
+                    txt=" You can drive."
+                }
+            }*/
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>
