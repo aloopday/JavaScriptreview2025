@@ -6,18 +6,19 @@
     <body>
 
         <p id="demo"></p>
+
         <script>
             let txt;
-            switch (new Date().getDay()){
-                case 6:
-                txt="Today is Saturday.";
-                brak;
-                case 0:
-                txt="Today is Sunday";
-                break;
+            switch( new Date().getDay()){
                 default:
-                txt="Looking forward to the Weekend";
-                break;
+                    txt="Hope this day is weekeand."
+                    break;
+                case 6:
+                    txt="Saturday";
+                    break;
+                case 0:
+                    txt="Sunday";
+
 
             }
             document.getElementById("demo").innerHTML=txt;
