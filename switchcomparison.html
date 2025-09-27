@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title> Switch optional</title>
+    </head>
+    <body>
+
+        <p>
+            Introduction of Switch  "strict model"
+        </p>
+        <p> In this example ,there is no case to match the result.</p>
+        <p id="demo"></p>
+        <script>
+
+            let x="0";
+            switch(x){
+                case x=0:
+                txt="on";
+                break;
+                case x=1:
+                txt="1";
+                break;
+                default:
+                txt="No value found.";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+
+
+
+    </body>
+</html>
