@@ -6,7 +6,15 @@
     <body>
 
         <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3">Hello</p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        
+
         <script>
+            /*
             document.getElementById("demo").innerHTML=
             "100 is " +Boolean(100)+"<br>"+
             "3.14 is "+Boolean(3.14)+"<br>"+
@@ -14,6 +22,22 @@
             '"Hello"is' +Boolean("Hello")+"<br>"+
             " 'false' is" +Boolean('fasle')+"<br>"+
             "(1+7+3.14) is "+ Boolean(1+7+3.14);
+            */
+
+            let x =0;
+            document.getElementById("demo").innerHTML=Boolean(x);
+            let a=-0;
+            document.getElementById("demo1").innerHTML=Boolean(a);
+            let b="";
+            document.getElementById("demo2").innerHTML=Boolean(b);
+            let c;
+            document.getElementById("demo3").innerHTML=Boolean(c);
+            let d=null;
+            document.getElementById("demo4").innerHTML=Boolean(d);
+            let e= 10 /"Heloo";
+            document.getElementById("demo5").innerHTML=Boolean(e);
+
+
         </script>
     </body>
 </html>
