@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p>
+            i=10 at the end because the for loop increments i up to 10, and var does not create a new scope for the i in the loop, so it overwrites the outer i.
+        </p>
+        <script>
+            var i=5;
+            for(var i=0;i<10;i++){
+
+            }
+            document.getElementById("demo").innerHTML=i;
+        </script>
+    </body>
+</html>
