@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let text = "";
+            let i=0;
+            while (i<10){
+                text +="The number is " + i + "<br>";
+                i++;// If you forget to increase the variable used in the condition,
+                // the loop will never end.
+                
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
