@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+
+        <p> Introduce replace all</p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo">"dogs are good for the dogs center,how to think dogs wash"</p>
+        <p>Select first ,then replace all them,</p>
+
+        <script>
+            function myFunction(){
+                let str =document.getElementById("demo").innerHTML;
+                //document.getElementById("demo").innerHTML=str.replaceAll("dogs","cats")
+                document.getElementById("demo").innerHTML=str.replaceAll(/dogs/g,"cats");
+            }
+        </script>
+    </body>
+</html>
