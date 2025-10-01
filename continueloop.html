@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Skip the iteration step when i equals 3.</p>
+        <p id="demo"></p>
+        <script>
+            let text ="";
+            for(let i =1; i<10;i++){
+                if(i===3){continue;}
+                text += i*10+"<br>";
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
