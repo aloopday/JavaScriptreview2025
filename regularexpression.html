@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <p>Introduce replace regular expression</p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo">Please visit Microsoft!</p>
+        <script>
+            function myFunction(){
+                let str=document.getElementById("demo").innerHTML;
+                document.getElementById("demo").innerHTML=str.replace(/Microsoft/i,"google");
+            }
+
+      </script>
+    </body>
+</html>
