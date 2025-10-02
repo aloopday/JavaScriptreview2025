@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h1> explain HTML Templates</h1>
+        <p id="demo"></p>
+
+        <script>
+            let header="list of members";
+            let tags=["alx","sam","peter","isabella"];
+            let html=`<h2>${header}</h2><ul>`;
+
+                for(const x of tags){
+                    html += `<li>${x}</li>`;
+                }
+                html +='</ul>';
+                document.getElementById("demo").innerHTML=html;
+        </script>
+    </body>
+</html>
