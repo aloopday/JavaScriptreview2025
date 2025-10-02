@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let str = "I love cats. Cats are very easy to love. Cats are very popular. Welcome to Cats center.";
+            // const iterator =str.matchAll("Cats");
+            // RegExp /pattern/flags
+           // const iterator =str.matchAll(/Cats/g);
+           //Case insensitive use i flag
+           const iterator =str.matchAll(/Cats/gi);
+
+            document.getElementById("demo").innerHTML=Array.from(iterator);
+        </script>
+    </body>
+</html>
