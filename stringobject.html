@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p>Notice: object string can compared or not.</p>
+        <script>
+            // this is a string;
+            let x="charles";
+            // This is an object
+            let y=new String("charles");
+            document.getElementById("demo").innerHTML=typeof x + "<br>" +typeof y;
+            document.getElementById("demo1").innerHTML=(x===y);
+
+            let a = new String("boat");
+            let b =new String("boat");
+            document.getElementById("demo2").innerHTML=(x===y);
+        </script>
+    </body>
+</html>
