@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>String match Method</p>
+        <p>Perform a search for "ain":</p>
+        <p id="demo"></p>
+        <script>
+            let text="The rain in SPAIN stays mainly in the plain,what \"ain\" means?";
+            // const myArray=text.match("ain");
+            // use regular expression
+            //const myArray=text.match(/ain/);
+            // regular expresion with glaobal flag
+            // RegExp /pattern/flags
+            const myArray=text.match(/ain/gi);
+           
+            document.getElementById("demo").innerHTML=myArray +" "+ myArray.length;
+        </script>
+    </body>
+</html>
