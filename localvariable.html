@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Introduce the local variable:</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            let txt=" Outside : " +typeof carName;
+            document.getElementById("demo").innerHTML=txt;
+
+            function myFunction(){
+                let carName="Audi";
+                let txt="Inside: "+ typeof carName + " "+ carName;
+                document.getElementById("demo1").innerHTML=txt;
+            }
+            myFunction();
+        </script>
+    </body>
+</html>
