@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Introduce safe integer</p>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML =Number.isSafeInteger(20)+"<br>"+
+            Number.isSafeInteger(12345678901234567890);
+        </script>
+    </body>
+</html>
