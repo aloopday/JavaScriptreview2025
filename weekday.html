@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Introduce the weekday</p>
+        <p id="demo"></p>
+        <script>
+            const d=new Date()
+            const days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            let weekday=days[d.getDay()];
+            document.getElementById("demo").innerHTML=weekday;
+        </script>
+    </body>
+</html>
