@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p> Convert a date to a string:</p>
+        <p id="demo"></p>
+        <script>
+            const d = new Date();
+            let text= d.toString();
+            let txt =d.toDateString();
+            let date=d.toUTCString();
+            let date1=d.toISOString();
+            document.getElementById("demo").innerHTML=text+
+            "<br>"+
+            txt+"<br>"+date+"<br>"+date1;
+        </script>
+    </body>
+</html>
