@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Introduce JavaScript methods</p>
+        <p id="demo"></p>
+        <script>
+            const myCar={
+                make:"BWM",
+                model:"x9",
+                year:2026,
+                color:"black ",
+                carName: function(){
+                    return this.make + " " +this.model;
+                }
+            };
+            document.getElementById("demo").innerHTML=myCar.carName();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Introduce Object creation</p>
+        <p id="demo"></p>
+        <script>
+            const person= new Object(
+                {
+                    firstName:"Isabella",
+                    lastName:"Wang",
+                    age:10,
+                    eyeColor:"blue"
+                
+                }
+            )
+
+            document.getElementById("demo").innerHTML=person.firstName+" "+
+            person.lastName +" is "+person["age"]+" years old."
+        </script>
+    </body>
+</html>
