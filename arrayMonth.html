@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Get Month from array</p>
+        <p id="demo"></p>
+        <script>
+            const months =["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const d = new Date();
+            let rightM=months[d.getMonth()];
+            document.getElementById("demo").innerHTML=rightM;
+        </script>
+    </body>
+</html>
