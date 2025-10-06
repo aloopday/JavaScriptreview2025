@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+
+
+        <p>Call a function for each array element:</p>
+        <p id="demo"></p>
+        <script>
+            const colleagues=["sonia","Namkung","Zubair","Charles"];
+            let text="<ul>";
+                colleagues.forEach(myFunction);
+                text +="</ul>";
+                document.getElementById("demo").innerHTML=text;
+                function myFunction(value){
+                    text +="<li>"+value+"</li>";
+                }
+        </script>
+    </body>
+
+</html>
