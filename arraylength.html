@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p > introduce how to add element to array.<br>
+        click me to add one element to this array</p>
+        <button  type="button" onclick="myFunction()">Click me </button>
+        <p id="demo"></p>
+        <script>
+            const appleProducts=["iphone","ipad","iMac"];
+            document.getElementById("demo").innerHTML=appleProducts;
+          
+           function myFunction(){
+              appleProducts[appleProducts.length] ="iphone17";
+              document.getElementById("demo").innerHTML=appleProducts;
+           }
+        </script>
+    </body>
+</html>
