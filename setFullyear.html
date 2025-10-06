@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>Introduce setFullYear()Method</p>
+        <p id="demo"></p>
+        <script>
+            const d =new Date("January 01,2025");
+            // setFullYear() method can optionally set Month and date.
+            //d.setFullYear(2021,10,3);
+           // d.setMonth(11)
+           //d.setDate(16);
+           // If adding days shits the month or year, the changes are 
+           // handled automatically by the Date object.
+
+            //d.setDate(d.getDate()+50)
+            //SetHours()mehod can also be used to set minutes and seconds
+
+            // d.setHours(15);
+           // d.setHours(13,12,55)
+           // setMinutes() Method
+          // The setMinutes() method sets the minutes of a date object(0-59)
+          //d.setMinutes(32);
+          d.setSeconds(33);
+            document.getElementById("demo").innerHTML=d;
+
+        </script>
+    </body>
+</html>

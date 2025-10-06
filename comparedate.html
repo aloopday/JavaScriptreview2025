@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>Compare date</p>
+        <p id="demo"></p>
+        <p><b></b></p>
+        <script>
+            let txt;
+            const today=new Date();
+            const someday=new Date();
+            someday.setFullYear(1986,9,12);
+            if(someday >today){
+                txt="Today is before 1986/10/12."
+            }else{
+                txt="Today is after 1986/10/12"
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>
