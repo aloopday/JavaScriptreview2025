@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Introduce, how to add the element to array.</p>
+        <button type="button" onclick="myFunction()">Click me </button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        
+        <script>
+            const familyTree=["grandpa","grandma","father","mother"];
+          
+            document.getElementById("demo").innerHTML=familyTree;
+
+            function myFunction(){
+                  familyTree.push("son");
+                  document.getElementById("demo").innerHTML=familyTree;
+            }
+
+        </script>
+    </body>
+</html>
