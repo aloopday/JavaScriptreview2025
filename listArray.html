@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Hwo to list the element of array</p>
+        <p id="demo"></p>
+        <script>
+            const studentName=["alex","olivia","isabella","Charles"];
+            let txt = "<ol>";
+            let sLen =studentName.length;
+
+            for (i=0;i<sLen;i++){
+                txt +="<li>"+studentName[i]+"</li>";
+            }
+            txt +="</ol>"
+            document.getElementById("demo").innerHTML=txt;
+        </script>   
+         </body>
+</html>
