@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>array undefined hole</p>
+        <p id="demo"></p>
+        <script>
+            const cars=["bus","minBus","tesla"];
+            cars[9]="toyota";
+            let carLen=cars.length;
+            let txt="";
+            let i=0;
+            for (i<0;i<carLen;i++)
+
+{
+                txt +=cars[i]+"<br>";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        </script>
+    </body>
+</html>
