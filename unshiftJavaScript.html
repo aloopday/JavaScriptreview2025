@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>Inrtroduce unshift</p>
+        <p id="demo"></p>
+        <script>
+            const cars =["Audi","BMW","Tesla","Toyota"];
+            //add a new element at the begging;
+            
+            cars.unshift("xiaomi");
+            // add a element at the end
+            cars.push("xiaopeng");
+            // Joint use "-";
+           // delete a element at the end
+          cars.pop();
+          // remove the first element at the beggining.
+        cars.shift();
+        //delete a element
+        delete cars[0];
+
+            document.getElementById("demo").innerHTML=cars.join("+");
+        </script>
+    </body>
+</html>
