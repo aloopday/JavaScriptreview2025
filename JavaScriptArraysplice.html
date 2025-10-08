@@ -6,12 +6,15 @@
     <body>
         <p id="demo1"></p>
         <p id="demo2"></p>
+        <p id="demo3"></p>
         <script>
 
             const products=["lotion","shampoo","suncream","detergent","softener"];
             document.getElementById("demo1").innerHTML=products;
-            products.splice(2,0,"v-c","Probiotics");
+           // products.splice(2,0,"v-c","Probiotics");
+           let removed =products.splice(2,2,"v-c","proviotics");
             document.getElementById("demo2").innerHTML=products;
+            document.getElementById("demo3").innerHTML="Removed Items:<br>"+"<strong>"+removed+"</strong>";
         </script>
         
     </body>
