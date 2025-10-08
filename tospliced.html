@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="enn">
+    <head></head>
+    <body>
+
+        <p>Introduce a toSpliced() method</p>
+        <p id="demo"></p>
+        <script>
+            const cars=["tesla","audi","bwm","benz"];
+           const spliced=cars.toSpliced(0,1);
+           const customers=["Sonia","Zubair","Alex","Daisy","Peter"];
+           const newCustomers=customers.toSpliced(0,2,"Olivia","Isabella")
+            document.getElementById("demo").innerHTML=spliced +"<br>" +cars +"<br>"+newCustomers;
+        </script>
+    </body>
+</html>

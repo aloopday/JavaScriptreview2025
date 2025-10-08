@@ -11,6 +11,9 @@
         <p id="demo"></p>
         <script>
             const cars =["toyota","tesla","toyota","Bwm"];
+            // The first parameter(0)defines the positon where new elements should be added(spliced in)
+            // The second parameter(1) defines how many elements should be removed.
+            //The rest of the parameters are omitted.No new elements will be added.
             cars.splice(0,1);
             document.getElementById("demo").innerHTML=cars;
         </script>
