@@ -5,11 +5,12 @@
         <script>
             const numbers =[4,9,16,25,29];
             let first =numbers.find(value => value > 18);
-            document.getElementById("demo").innerHTML="First number over 18 is "+ first;
+            let indexnumber = numbers.findIndex(myFunction);
+            document.getElementById("demo").innerHTML="First number over 18 is "+ first+"<br>"+"The position is at "+indexnumber+".";
 
-           /* function myFunction(value,index,array){
+        function myFunction(value,index,array){
                 return value >18;
-            }*/
+            }
         </script>
     </body>
 </html>
