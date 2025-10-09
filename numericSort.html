@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+    
+        const number=[20,40,30,100,1,3,5,900];
+        document.getElementById("demo").innerHTML=number;
+        number.sort(function(a,b){return a - b });
+        document.getElementById("demo1").innerHTML=number;
+        number.sort(function(a,b){return b - a});
+        document.getElementById("demo2").innerHTML=number;
+     </script>
+    </body>
+     
+        
+</html>
