@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>Test a random order of Array</p>
+        <button  type="button" onclick="myFunction()" >Random Sort Test</button>
+        <p id="demo"></p>
+        <script>
+            const numbers=[1,50,98,9000,50,30,60];
+           document.getElementById("demo").innerHTML=numbers;
+          
+            function myFunction(){
+                numbers.sort(function(){return 0.5 - Math.random()});
+                document.getElementById("demo").innerHTML=numbers;
+            }
+        </script>
+    </body>
+</html>
