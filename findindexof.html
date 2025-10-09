@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html >
+    <head>
+
+    </head>
+    <body>
+        <p>The findeIndex() Mehod</p>
+        <p id="demo"></p>
+        <script>
+            const numbers=[3,6,9,12,15,17];
+            document.getElementById("demo").innerHTML="First number over 18 has index"+numbers.findIndex(myFunction);
+            function myFunction(value,index,array){
+                return value>12;
+            }
+        </script>
+    </body>
+</html>
