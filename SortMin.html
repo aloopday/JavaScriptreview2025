@@ -3,6 +3,8 @@
     <body>
         <p>The sort()Method can easily help sort the Array.</p>
         <p id="demo"></p>
+        <p><b>Notice:</b>Sorting a whole arrayu is a very inefficieng method if you 
+        only want to find the highest (or lowest) value.</p>
 
         <script>
             const points=[40,100,20,50,25,10];
@@ -10,7 +12,7 @@
           //  points.sort(function(a,b){return a-b});
             //find the array max value
             points.sort(function(a,b){return b-a});
-            
+
             document.getElementById("demo").innerHTML=points[0];
         </script>
     </body>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Find the lowest value of the array</p>
+        <p id="demo"></p>
+        <script>
+            const points =[40,100,1,5,25,10];
+            document.getElementById("demo").innerHTML=myArrayMin(points);
+            function myArrayMin(arr){
+                return Math.min.apply(null,arr);
+            }
+        </script>
+    </body>
+</html>
