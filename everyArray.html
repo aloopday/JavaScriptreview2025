@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            Explain the array.every() method.
+        </p>
+        <p id="demo"></p>
+        <script>
+            const numbers=[2,40,28,10];
+            let  allOver18= numbers.every(myFunction);
+            document.getElementById("demo").innerHTML=allOver18;
+            function myFunction(value){
+                return value>18;
+            }
+        </script>
+    </body>
+</html>
