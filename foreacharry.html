@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>Call a function once for each array element.</p>
+        <p id="demo"></p>
+        <script>
+            const numbers =[45,4,90,16,25,345];
+
+            let text ="";
+            numbers.forEach(myFunction);
+            document.getElementById("demo").innerHTML=text;
+
+            function myFunction(value,index,array){
+                text += value +"<br>";
+            }
+        </script>
+    </body>
+</html>
