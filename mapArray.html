@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>
+            Create a new array be performing a function on each array element:
+        </p>
+        <p id="demo">
+            <script>
+                const numbers1 =[45,4,9,16,25,50];
+                //When you write numbers1.map(myFunction) (without parentheses after myFunction), you're passing the function itself as a value—essentially a reference to the function definition elsewhere in your code
+
+
+                const numbers2=numbers1.map(myFunction);
+                document.getElementById("demo").innerHTML=numbers2;
+
+                function myFunction(value,index,array){
+                    return value *2
+                }
+            </script>
+
+        </p>
+    </body>
+</html>

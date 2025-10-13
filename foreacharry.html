@@ -10,10 +10,16 @@
             let text ="";
             numbers.forEach(myFunction);
             document.getElementById("demo").innerHTML=text;
+            
+            function myFunction(value){
+                text +=value +"<br>";
+            }
 
+                /*
             function myFunction(value,index,array){
                 text += value +"<br>";
             }
+                */
         </script>
     </body>
 </html>
