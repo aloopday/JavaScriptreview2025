@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Find the sum of all numbers in an array:</p>
+        <p id="demo"></p>
+
+        <script>
+            const numbers=[45,4,9,16,25,100];
+            let sum =numbers.reduce(myFunction);
+            document.getElementById("demo").innerHTML="The sum is "+sum;
+            /*
+            Note the function takes 4 arguments:
+            1: The total(the initial value/perviously returned value);
+            2.The item value;
+            3.The item index;
+            4.The array itself;
+            */
+            function myFunction(total,value){
+                return total +value;
+            }
+        </script>
+    </body>
+</html>
