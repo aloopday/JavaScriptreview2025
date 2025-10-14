@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>The some()method checks if some array values pass a test: boolean tes</p>
+        <p id="demo"></p>
+        <script>
+            const numbers =[45,4,9,16,25,98];
+            let someOver18 =numbers.some(myFunction);
+            document.getElementById("demo").innerHTML="Some over 18 is "+ someOver18;
+            function myFunction(value){
+                return  value >18;
+            }
+
+        </script>
+    </body>
+</html>
