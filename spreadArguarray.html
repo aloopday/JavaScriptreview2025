@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The ...operator can spread array elements to a function:</p>
+        <p id="demo"></p>
+        <script>
+            const numbers =[23,55,21,87,56];
+            let minValue =Math.min(...numbers);
+            let maxValue=Math.max(...numbers);
+            document.getElementById("demo").innerHTML="Min = " +minValue + "<br>Max = " +maxValue;
+        </script>
+    </body>
+</html>
