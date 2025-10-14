@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>JavaScript const</h2>
+        <p id="demo"></p>
+        <h2>Arrays are Not Constants</h2>
+        <p>The keyword "const" is a little misleading.
+            It does NOT define a constant array.It defines a <b>consstant reference</b> to an array.<br>
+            Because of this, we can still change the elements of a constant array.
+
+        </p>
+        <script>
+            const cars =["Saab","Volvo","BMW"];
+            document.getElementById("demo").innerHTML=cars;
+        </script>
+    </body>
+</html>
