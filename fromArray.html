@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Array.from() has an optional parameter which allows you to execute a 
+            funciton on each element of the new array. </p>
+            <p id="demo"></p>
+            <script>
+                const arry=[2,4,6,8,10];
+                let myArray=Array.from(arry,(x)=>x*2);
+                document.getElementById("demo").innerHTML=myArray;
+            </script>
+    </body>
+</html>
