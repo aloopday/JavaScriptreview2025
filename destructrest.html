@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Rest Elements</p>
+        <p>The rest operator(...) allows us to destruct an array and collect the leftovers:</p>
+        <p id="demo"></p>
+        <script>
+            let a,b,rest;
+            const myArray=[1,2,3,4,5,6,7,8,9,10,11];
+            [a, ...rest]=myArray;
+            document.getElementById("demo").innerHTML ="The rest is: "+rest;
+        </script>
+    </body>
+</html>
