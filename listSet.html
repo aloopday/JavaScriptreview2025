@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>You can iterate set values with for...of: loope</p>
+        <p id="demo"></p>
+        <script>
+            //Creat a set
+            const cars= new Set(["toyota","tesla","audi"]);
+
+            //List all elements
+            let txt ="";
+            for (const x of cars){
+                txt += x +"<br>";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>

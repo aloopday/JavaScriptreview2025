@@ -15,7 +15,11 @@
             products.add("rings");
             products.add("window");
 
-            document.getElementById("demo").innerHTML=products.size;
+            let txt ="";
+            for (const x of products){
+                txt += x +"<br>"
+            }
+            document.getElementById("demo").innerHTML=products.size +"<br>"+txt;
         </script>
     </body>
 </html>
