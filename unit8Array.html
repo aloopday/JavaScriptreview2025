@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Create a typed of 10 unsigned 8-bit integers(octet format):</p>
+        <p id="demo"></p>
+        <script>
+            const myArr =new Uint8Array(10);
+            document.getElementById("demo").innerHTML ="Array: " +myArr +"<br>Bytes per element:"+
+            myArr.BYTES_PER_ELEMENT;
+        </script>
+    </body>
+</html>

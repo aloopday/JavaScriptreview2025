@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Create a typed array of 10 signed 8-bit integers (byte format)</p>
+        <p id="demo"></p>
+
+        <script>
+            const myArry =new Int8Array(10);
+            document.getElementById("demo").innerHTML="Array: "+myArry+"<br>Bytes per element: "+
+            myArry.BYTES_PER_ELEMENT;
+        </script>
+    </body>
+</html>
