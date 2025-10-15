@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The add() method adds values to a set:</p>
+        <p id="demo"></p>
+        <script>
+            //Creat a set
+            const products=new Set(["box","pen","rule","door"]);
+            // add values to the set
+            products.add("window");
+            products.add("rings");
+            products.add("rings");
+            products.add("window");
+
+            document.getElementById("demo").innerHTML=products.size;
+        </script>
+    </body>
+</html>
