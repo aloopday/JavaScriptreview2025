@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The isSubsetOf() method returns true if all elements in this sets
+            is also eleemnts in the arguments set:
+            </p>
+        <p id="demo"></p>
+        <script>
+            const A =new Set(['a','b','c']);
+            const B =new Set(['b','c','d']);
+
+            let answer =A.isSubsetOf(B);
+            document.getElementById("demo").innerHTML=answer;
+        </script>
+    </body>
+</html>
