@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create a set;
+            const names=new Set(["Oliva","Isabella","Alex","Charles"]);
+            //list the element of values
+            let txt="";
+            for(const x of names.values()){
+                txt +=x+"<br>";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>

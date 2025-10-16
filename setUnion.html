@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const A= new Set(['a','b','c']);
+            const B=new Set(['b','c','d']);
+            const c=A.union(B);
+            let txt="";
+            for(x of c){
+                txt +=x+"<br>";
+            }
+            document.getElementById("demo").innerHTML ="The union is: " + txt;
+        </script>
+    </body>
+</html>
