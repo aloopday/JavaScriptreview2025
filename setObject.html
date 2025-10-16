@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Sets are Objects</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            //Create a new set
+            const cars =new Set(["audi","byd","toyota","tesla"]);
+            
+            //display set typeof
+            document.getElementById("demo").innerHTML="The type of the st is "+ typeof cars;
+            document.getElementById("demo").innerHTML=cars instanceof Set;
+
+        </script>
+
+    </body>
+</html>

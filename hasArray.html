@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The has() method returns true if a set contains a spesific value:</p>
+        <p id="demo"></p>
+        <script>
+            //Creat a new set
+            const cars =new Set(["a","b","c"]);
+            //Does the Set contain "d"?
+           // answer=cars.has("byd");
+           let answer=cars.has("a");
+           // list all elements
+           let txt ="";
+           cars.forEach(function(value){txt +=value+"<br>"})
+            document.getElementById("demo").innerHTML="The answer is "+ answer+"<br>"+"cars indlude: "+txt;
+        </script>
+    </body>
+</html>
