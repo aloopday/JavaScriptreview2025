@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>The intersection() Method</h2>
+        <p>The intersection() method returns a new set containing the elements which are in this set
+            and in the arguments set:
+        </p>
+        <p id="demo"></p>
+        <script>
+            const A=new Set(["Audi","BMW","Tesla","Toyota"]);
+            const B=new Set(["Tesla","Toyota","XiaoMi"]);
+            const C=A.intersection(B);
+            let txt="";
+            for(x of C){
+                txt += x+",";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>
