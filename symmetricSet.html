@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+<body>
+    <p>The symmetricDifference() method returns a new set containing 
+        elements which are in this set or in the argument set, but not in both:
+        </p>
+        <p id="demo"></p>
+    
+        <script>
+            const A =new Set(["a","b","c"]);
+            const B =new Set(["b","c","d"]);  
+            const C =A.symmetricDifference(B);
+            let txt =" ";
+            for(const x of C ){
+                txt +=x;
+            }  
+            document.getElementById("demo").innerHTML ="Symmetric differntce is: "+
+            txt;
+              </script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

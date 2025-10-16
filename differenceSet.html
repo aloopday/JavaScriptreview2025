@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The difference()method returns a new set containing elements which are in this set but
+            not in the argument set
+        </p>
+        <p id="demo"></p>
+        <script>
+            const A =new Set(["a","b","c"]);
+            const B =new Set(["b","c","d"]);
+
+            const C =A.difference(B);
+
+            let txt =" ";
+            for (x of C){
+                txt += x;
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>
