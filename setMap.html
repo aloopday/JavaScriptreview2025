@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+
+        <p> how to create a map</p>
+        <p id="demo"></p>
+        <script>
+            //Create a Map
+            const cars = new Map();
+            // Set Map values;
+            cars.set("tesla","Model3");
+            cars.set("tesla2","ModelY");
+
+            let model=cars.get("tesla");
+            document.getElementById("demo").innerHTML=model;
+
+        </script>
+    </body>
+</html>
