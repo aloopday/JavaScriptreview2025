@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The example of  Map()</p>
+        <p id="demo"></p>
+        <script>
+            const myCars=new Map([["tesla","Model Y"],["toyota","crown"],["Benz","Css3"]]);
+            myCars.set("BMW","x5");
+            let favoCar=myCars.get("BMW");
+            document.getElementById("demo").innerHTML=favoCar;
+        </script>
+    </body>
+</html>

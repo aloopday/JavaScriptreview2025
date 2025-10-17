@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p> How to get a value of map() method</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            const cars=new Map([["tesla","Model 3"],["toyota","corolla"],["BMW","X3"]]);
+
+            let myCar=cars.get("BMW");
+            document.getElementById("demo").innerHTML=myCar +"<br>"+ typeof cars;
+            document.getElementById("demo").innerHTML= cars instanceof Map;
+
+        </script>
+    </body>
+</html>
