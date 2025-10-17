@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Create a Map passing an Array to the new Map() constructor</p>
+        <p id="demo"></p>
+        <script>
+            //Create a Map
+            const fruits=new Map([
+                ["apples",500],["bananas",300],["oranges",300]
+            ]);
+            let value =fruits.get("apples");
+            document.getElementById("demo").innerHTML="There are " +value +" apples.";
+        </script>
+    </body>
+</html>
