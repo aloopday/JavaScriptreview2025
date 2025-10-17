@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Instruct the object as the key of the Map</p>
+        <p id="demo"></p>
+        <script>
+            const apples={name: 'Apple'};
+            const bananas={name:'banana'};
+            const oranges={name:'Orange'};
+            //Create a Map
+            const fruits =new Map();
+            //Add new Elements to the map
+            fruits.set(apples,5);
+            fruits.set(bananas,90);
+            fruits.set(oranges,89);
+
+            document.getElementById("demo").innerHTML=fruits.get(bananas);
+        </script>
+    </body>
+</html>

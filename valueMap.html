@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p> The values()Method</p>
+        <p id="demo"></p>
+        <script>
+            //Create a Map
+            const fruits=new Map([
+                ["banana",50],
+                ["Apples",80],
+                ["PineApple",60]
+            ])
+
+            let txt ="";
+            for(const x of fruits.values()){
+                txt +=x+"<br>";
+            }
+
+            let total=0;
+            for(const x of fruits.values()){
+                total += x;
+            }
+            document.getElementById("demo").innerHTML=txt +"<br>"+total;
+        </script>
+    </body>
+</html>
