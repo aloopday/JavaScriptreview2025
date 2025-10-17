@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p>Change the Map method values</p>
+        <script>
+            //Creat a Map
+            const cars=new Map(
+                [
+            ["Tesla","ModelY" ],
+            ["Toyota","Corollay"],
+            ["Xiaomi","Yu&"]]);
+
+            cars.set("Tesla","Model 3");
+            
+            let myCar=cars.get("Tesla");
+            document.getElementById("demo").innerHTML="My first car is " +myCar+"."
+        </script>
+    </body>
+</html>
