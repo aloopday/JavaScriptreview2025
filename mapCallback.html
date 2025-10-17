@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Introduce callback function of Map object</p>
+        <p id="demo"></p>
+        <script>
+            const myCars= new Map([["Tesla","Model3"],["toyota","Crown"],["xiaomi","su7"]]);
+
+            let txt ="";
+
+            myCars.forEach(function(key,value){
+                txt += key+'='+value+"<br>";
+            })
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>

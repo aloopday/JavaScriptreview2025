@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Introduce the Entries</p>
+        <p id="demo"></p>
+        <script>
+            const familyMem=new Map([["father","Charles"],["mother","Necole"]]);
+
+            let txt="";
+           for(const x of familyMem.entries()){
+            txt += x+"<br>";
+           }
+           document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+
+</html>
