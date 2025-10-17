@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <p id="demo"></p>
+    <script>
+        let txt ="";
+        //Create a Weak to track persons
+        const persons =new WeakSet();
+        // Create Visitor Objects
+        const John={name:"John", age:40};
+        const Alex={name:"Alex",age:41};
+        const Ringo={name:"Ringo",age:39};
+        const Sonia={name:"Sonia",age:30};
+        //Track visits
+        track(Alex);
+        track(Ringo);
+        track(Alex);
+
+        //Function to track visitors
+        function track(visitor){
+            if(persons.has(visitor)){
+                  txt +=visitor.name + " is visting again.<br>";
+
+            }else {
+            persons.add(visitor);
+            txt += visitor.name+",age " + visitor.age +" , is visiting for the  first time <br>";
+        }}
+
+        document.getElementById("demo").innerHTML=txt;
+    </script>
+</html>
