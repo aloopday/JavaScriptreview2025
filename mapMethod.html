@@ -10,7 +10,9 @@
             const myCars=new Map([["tesla","Model Y"],["toyota","crown"],["Benz","Css3"]]);
             myCars.set("BMW","x5");
             let favoCar=myCars.get("BMW");
-            document.getElementById("demo").innerHTML=favoCar;
+            myCars.delete("toyota");
+            myCars.clear();
+            document.getElementById("demo").innerHTML=favoCar +"<br>"+myCars.size;
         </script>
     </body>
 </html>

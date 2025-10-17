@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Map.has() method returns true if a key exists in a map:</p>
+        <p id="demo"></p>
+        <script>
+            //Creat a map
+            const tools=new Map([["pen",0],["penceil",100],["knife",59]]);
+            tools.delete("knife");
+            document.getElementById("demo").innerHTML=tools.has("apples")+"<br>"+tools.has("knife");
+        </script>
+    </body>
+</html>
