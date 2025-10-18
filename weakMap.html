@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>Introduce of WeakMap</p>
+        <p id="demo"></p>
+        <script>
+            //Create a WeakMap
+            let myMap =new WeakMap();
+
+            // Creat an Object
+            let myObj={fname:"Charles",lname:"Wang"};
+
+            //set a weakMap value
+            myMap.set(myObj,"Student");
+            //Get the WeakMap value
+            let type=myMap.get(myObj);
+            document.getElementById("demo").innerHTML="He is a smart "+type;
+        </script>
+    </body>
+
+</html>
