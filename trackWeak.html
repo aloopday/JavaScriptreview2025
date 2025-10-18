@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Tracking WeakMap References</p>
+        <p id="demo"></p>
+        <script>
+            let txt="";
+            //Create a WeakMap to store visit counts
+            const visitsCount=new WeakMap();
+            //Create visitor Objects
+            const Charles={name:"Charles",age:40};
+            const Alice={name:"Alice",age:39};
+            const Alex={name:"Alex",age:18};
+            const Olivia={name:"Olivia",age:8};
+
+            //Track visits
+            track(Charles);
+            track(Alice);
+            track(Alex);
+            track(Olivia);  
+             track(Alice);
+              track(Alice);
+            track(Alice); 
+        track(Alice);
+            //Function to track visitor
+            function track(visitor){
+                let count = visitsCount.get(visitor) || 0;
+                count++;
+                visitsCount.set(visitor,count);
+                txt += visitor.name +", age "+visitor.age+
+                ", has visited  "+count + " time(s).<br>";
+
+
+            }
+            document.getElementById("demo").innerHTML=txt;
+
+        </script>
+    </body>
+</html>

@@ -3,6 +3,21 @@
     <body>
         <p>Introduce of WeakMap</p>
         <p id="demo"></p>
+        <p>Garbage Collection</p>
+        <p>JavaScript employs a memory managemenet mechanism know as 
+            Garbage Collection.
+            The primary function are :
+
+            
+        </p>
+        <ul>
+            <li>Ensuring efficient use of memory resources</li>
+            <li>Reclaim memory occupied by variables that are no longer in 
+                use
+
+            </li>
+           <li>Preventing memory leaks</li>
+        </ul>
         <script>
             //Create a WeakMap
             let myMap =new WeakMap();
@@ -15,6 +30,7 @@
             //Get the WeakMap value
             let type=myMap.get(myObj);
             document.getElementById("demo").innerHTML="He is a smart "+type;
+            
         </script>
     </body>
 
