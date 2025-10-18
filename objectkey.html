@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>The object as the key of The Map()</p>
+        <p id="demo"></p>
+        <script>
+            //create an Map
+            const myCar = new Map();
+            //create an object
+            const toyota={name:"Toyota"};
+            const ford={name:"Ford"};
+            const bmw={name:"BMW"};
+            //Use the object as the key of Map
+            myCar.set(toyota,"Corolla");
+            myCar.set(ford,"Mengqin");
+            myCar.set(bmw,"X5");
+            
+            document.getElementById("demo").innerHTML=myCar.get(bmw);
+            
+
+        </script>
+    </body>
+</html>
