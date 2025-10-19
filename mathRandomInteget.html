@@ -8,7 +8,18 @@
         <p id="demo"></p>
 
         <script>
-            document.getElementById("demo").innerHTML =Math.floor(Math.random()*10);
-        </script>
+            let a =Math.floor(Math.random()*10);
+            let b =Math.floor(Math.random()*11);
+            let c=Math.floor(Math.random()*100);
+            let d=Math.floor(Math.random()*101);//Returns a random integer from 0 to 100;
+            let e=Math.floor(Math.random()*10)+1;//Returns a random integer from 1 to 10;
+            let f=Math.floor(Math.random()*100)+1;
+            const random=[a,b,c,d,e,f];
+            let txt="";
+            for(let i=0;i<random.length;i++){
+                txt +=random[i]+"<br>";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        </script> 
     </body>
 </html>
