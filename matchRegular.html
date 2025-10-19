@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>Search for "w3schools" and display the first match:</p>
+        <p id="demo"></p>
+        <script>
+            let text="Visit carCenter in Hong Kong ";
+            let myArr=text.match(/carCenter/);
+            let newName=text.replace(/carCenter/,"CharlesCarClub");
+            let result=newName.search(/CharlesCarClub/);
+            document.getElementById("demo").innerHTML=myArr + "<br>" + newName+ "<br>"+ result;
+        </script>
+    </body>
+</html>
