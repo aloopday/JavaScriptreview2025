@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Math.pow(x,y)</title>
+    </head>
+    <body>
+        <p>Math.pow introduction</p>
+        <p id="demo"></p>
+        <p>Math.random() returns a random number between 0(inclusive),and 1(exclusive):</p>
+        <p>Math.log(x) returns the natural logarithm of x.
+            
+        </p>
+        <p>The natural logarithm returns the time needed to reach a certain level of growth:</p>
+        <script>
+            let a =Math.pow(3,2);
+            let b=Math.sqrt(64);
+            let c=Math.abs(-5.9);
+            let d=Math.sin(90 *Math.PI /180);//returns 1 (the sine of 90 degrees))
+            let e=Math.cos(0*Math.PI /180);//returns 1 (the cosine of 0 degrees)
+            let f=Math.min(0,150,30,20,-8,-200);
+            let g=Math.max(0,120,-30,98,9000);
+            let h=Math.random();
+            let i=Math.log(1);
+            let j=Math.log(2);
+            let k=Math.log(3);
+            //Math.E and Math.log() are twins:
+            let l=Math.log(10);
+            
+            const mathMethods=[a,b,c,d,e,f,g,h,i,j,k,l];
+            let txt="";
+            for(let i=0;i<mathMethods.length;i++){
+                txt += mathMethods[i]+"<br>";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>
