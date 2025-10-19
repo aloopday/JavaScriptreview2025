@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Every time you click the button.</p>
+        <p id="demo"></p>
+        <button onclick="document.getElementById('demo').innerHTML=getRndInteger(1,10)">Try it</button>
+        <script>
+            function getRndInteger(min, max){
+                return Math.floor(Math.random() *(max- min +1))+min;
+            }
+
+        </script>
+    </body>
+</html>
