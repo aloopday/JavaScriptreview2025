@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>A global search for "is " in a string: </p>
+        <p id="demo"></p>
+        <script>
+            let text="Is this all there is ? Is it?";
+            const pattern =/is/g;
+            let result =text.match(pattern);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+
+    </body>
+</html>
