@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>A global search for word characters:</p>
+        <p id="demo"></p>
+        <script>
+            let text="Give apple 5;";
+            const pattern=/\w/g;
+            let result=text.match(pattern);
+            document.getElementById("demo").innerHTML=result;
+
+        </script>
+    </body>
+</html>
