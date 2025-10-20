@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Test if a text starts with Charles:</p>
+        <p id="demo"></p>
+        <script>
+            const pattern=/^Charles/;
+            let txt="Charles Car Club";
+            let result=pattern.test(txt);
+            document.getElementById("demo").innerHTML=result;
+
+        </script>
+    </body>
+</html>
