@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>A case-insensitive serarch for "charles.com" in a string:</p>
+        <p id="demo"></p>
+        <script>
+            let txt ="Visit Charles.com!";
+            const pattern =/charles.com/i;
+            let result=txt.match(pattern);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+
+</html>
