@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+
+        <p>The /v flag is an "upgrade" to the 
+            u flag.It enables more unicodfe-related features.
+        </p>
+        <p id="demo"></p>
+        <script>
+            let text ="Hello 😄";
+            const pattern=/\p{Emoji}/v;
+
+            let result =pattern.test(text);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+
+
+
+    </body>
+
+
+</html>

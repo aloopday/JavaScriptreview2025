@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p> Search for "Charles2028 tutorials" (with only charles2028 case-intensitive):</p>
+
+        <p id="demo"></p>
+        <script>
+            let text="Charles2028 tutorials";
+            const pattern=/(?i:Charles2028) tutorials/;
+            let result=pattern.test(text);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>
