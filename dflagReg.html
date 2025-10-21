@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The /d Flag</p>
+        <p id="demo"></p>
+        <script>
+            let text="aaabb";
+            const pattern=/(aa)(bb)/d;
+            let result=text.match(pattern);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h1>Hello Lvy</h1>
+        <p>The /s (dotAll flag allows the . Metacharacter to match any character,
+            including line terminators)</p>
+            <p id="demo"></p>
+            <script>
+              
+                let text ="Line where are you ?\nLine.";
+                const pattern=/Line./gs;
+                let result =text.match(pattern);
+                document.getElementById("demo").innerHTML= result;
+
+            </script>
+    </body>
+</html>
