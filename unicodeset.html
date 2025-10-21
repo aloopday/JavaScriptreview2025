@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>Returns true if the /v flag is set.</p>
+        <p id="demo"></p>
+        <script>
+            let text="Hello  😄";
+            const pattern=/\p{Emoji}/v;
+            let result=pattern.unicodeSets;
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>
