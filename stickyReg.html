@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The /y flag must be set to allow matches from a position.</p>
+        <p>The /y flag performs a "stricky" search from the lastIndex property of the RegExp object.</p>
+        <p>The /y flag lets a match start at the exact position where the last match ended.</p>
+        <p id="demo"></p>
+        <script>
+            let text ="abc def ghi";
+            const pattern=/\w+/y;
+            //start matching from position 4
+            pattern.lastIndex=4;
+            let result=text.match(pattern);;
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>
