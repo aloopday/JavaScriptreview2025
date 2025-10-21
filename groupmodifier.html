@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Goups Modifier (?flag)</p>
+        <p id="demo"></p>
+        <script>
+            let txt="W3schools Tutorials.";
+            const pattern=/(?i:W3Schools) tutorials/;
+            let result=pattern.test(txt);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+
+</html>
