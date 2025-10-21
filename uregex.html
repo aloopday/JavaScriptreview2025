@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>
+            Without the /u flag,regular expressions treat strings as a sequence of 16-bit code units;
+        </p>
+        <p id="demo"></p>
+        <script>
+            let text ="䷀";
+            const pattern=/\u{04DC0}/;
+            let result =pattern.test(text);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+
+    </body>
+    </html>
