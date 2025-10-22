@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+         <p>
+        A global replace of the hexadecimal character 6F(o):
+    </p>
+    <p id="demo"></p>
+    <script>
+        let text = "Visit W3Schoold.Hello World!";
+        let pattern=/\x6F/g;
+        let result=text.replace(pattern,"*");
+        document.getElementById("demo").innerHTML=result;
+
+    </script>
+
+    </body>
+   
+    
+</html>
