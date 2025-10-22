@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Test is a text starts with W3Schools:</p>
+        <p id="demo"></p>
+        <script>
+            //const pattern=/^W3Schools/;
+            const pattern=/W3Schools$/;
+            //let text="W3Schools tutorial";
+          //  let text="Hello W3Schools"
+          let text="W3Schools tutorial";
+            let result=pattern.test(text);
+            document.getElementById("demo").innerHTML=result;
+
+        </script>
+    </body>
+</html>
