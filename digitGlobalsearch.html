@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>A global search for number 1,2,3 and 4 n a </p>
+        <p id="demo"></p>
+        <p><b>Note:</b> [012345] is the same as [0-4];</p>
+        <p><b>Note:</b>[abcde] is the same as [a-e]</p>
+        <script>
+            let text="123456789";
+            //const pattern=/[1-4]/g;
+         const pattern =/[12346]/g;
+            let result =text.match(pattern);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>

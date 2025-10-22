@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Regular Expression Metacharacters</p>
+        <p>Metacharacters are characters with a special meaning.</p>
+        <p>They can be used to match digts,words,spaces,and more</p>
+        <P id="demo"></P>
+        <script>
+            let text ="Give 100%!";
+            const pattern =/\D/g;
+            let result=text.match(pattern);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>
