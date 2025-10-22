@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>A global search for the characters A to A;</p>
+        <p id="demo"></p>
+        <script>
+            let text="This is Charles Car Club.Please have a SEAT.";
+            const pattern=/[A-Z]/g;
+            let result=text.match(pattern);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>
