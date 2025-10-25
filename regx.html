@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>Lookahead Assertion</h2>
+        <p>Match "W3schools" if "W3Schools" is followed by "Tutorials".</p>
+        <p id="demo"></p>
+        <script>
+            //let text ="W3Schools  Tutorials";
+            let text="W3Schools Tutorials";
+            let pattern= new RegExp("W3Schools(?= Tutorials)");
+            let result =pattern.test(text);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>

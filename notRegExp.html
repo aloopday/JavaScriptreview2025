@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Match "W3schools" only if "W3Schools" is NOT followed by "Tutorials".
+
+        </p>
+        <p id="demo"></p>
+        <script>
+            let text="W3Schools Tutorials";
+            let pattern=/W3Schools(?! Tutorials)/;
+            let result=pattern.test(text);
+            document.getElementById("demo").innerHTML =result;
+        </script>
+    </body>
+</html>
