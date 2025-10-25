@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1>Regular Expressions</h1>
+        <p>Search for the characters "LO" in the 
+            <b>beginning</b> of a word in the phrase:
+        </p>
+        <p>"HELLO,LOOK AT YOU!"</p>
+        <P>Found in position: <span id="demo"></span></P>
+        <script>
+            let text ="HELLO, LOOK AT YOU!";
+            let result =text.search(/\bLO/);
+            document.write(result);
+            
+        </script>
+    </body>
+</html>
