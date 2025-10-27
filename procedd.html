@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>Match "W3Schools" is preceded by "Hello ".</p>
+        <p id="demo"></p>
+        <script>
+            let text ="Hello W3Schools";
+            let  pattern =/(?<=Hello) W3Schools/;
+
+            let result = pattern.test(text);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>
