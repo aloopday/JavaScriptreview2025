@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>(?<firstName>\w+) is a named capturing group:?<firstName> assigns the name "firstName" to this group.
+\w+ matches one or more word characters (letters, digits, or underscores).
+
+</p>
+<p id="demo"></p>
+<script>
+    const text ="Name: John Doe";
+
+    // Using named capturing groups
+    const regex =/(?<firstName>\w+) (?<lastName>\w+)/;
+    const match =text.match(regex);
+    let fName=match.groups.firstName;
+    let lName=match.groups.lastName;
+    document.getElementById("demo").innerHTML="Last Name:"+ lName;
+
+</script>
+
+    </body>
+</html>

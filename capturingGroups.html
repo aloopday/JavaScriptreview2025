@@ -7,11 +7,18 @@
         
         <p>Search for "haha" in a string:</p>
         <p id="demo"></p>
+        <p>(haha) captures a group of characters
+            (haha)+ matches zero or more occurences of the group
+            text.match() returns an array of results
+            match.groups ()retruns an array of matches
+             
+        </p>
         <script>
             let text ="Haha, haha, haha.";
             const pattern=/(haha)+/;
             let result =text.match(pattern);
             document.getElementById("demo").innerHTML=result;
+
         </script>
 
 
