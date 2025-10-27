@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>Search for "w3schools tutorials"</p>
+        <p id="demo"></p>
+        <script>
+            let text ="W3Schools tutorials,";
+            const pattern =/(?i:W3schools) tutorials/;
+            let result = pattern.test(text);
+            document.getElementById("demo").innerHTML = result;
+        </script>
+    </body>
+</html>
