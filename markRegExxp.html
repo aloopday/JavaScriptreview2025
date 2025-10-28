@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>A ggloball seearch foa "1", followed by zero or  one "0" characters</p>
+        <p id="demo"></p>
+        <script>
+            let text = "1, 100 or 1000?";
+            const pattern=/10?/g;
+            let result =text.match(pattern);
+            document.getElementById("demo").innerHTML = result;
+        </script>
+    </body>
+</html>

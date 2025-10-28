@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>A  global search for an "l", followed by zero or more "o" aracters:</p>
+        <p id="demo"></p>
+        <script>
+            let text = "Hellooo World! Hello W3Schools!";
+            const pattern =/lo*/g;
+
+            let result = text.match(pattern);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>
