@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>A gloabal search for sequnce of n(4) digits: </p>
+        <p id="demo"></p>
+        <script>
+            let text ="100, 20000,1000 or 10000?";
+            const pattern =/\d{4}/g;
+            let result =text.match(pattern);
+            document.getElementById("demo").innerHTML =result;
+
+        </script>
+    </body>
+</html>
