@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Safely escape strings to be used inside regular expressions:</p>
+        <p id="demo"></p>
+        <script>
+            //Escape a text for to use as a regular expression
+            const safe=RegExp.escape("[*]");
+            //Build a new regular expression
+            const regex=new RegExp(safe);
+            // Text to replace within
+            const oldText="[*] is a web school.";
+            // Perform the replace
+            const newText =oldText.replace(regex,"W3Schools");
+            document.getElementById("demo").innerHTML =newText;
+        </script>
+    </body>
+</html>
