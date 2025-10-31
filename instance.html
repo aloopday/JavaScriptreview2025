@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            //Create a Date
+            const time =new Date();
+            const cars=["tesla","audi","bmw"];
+            //create a map
+            const car=new Map(
+                [
+                    ["tesla",100],
+                    ["toyota",200],
+                    ["bmw",900]
+
+                ]
+            )
+            //Create a set
+            const fruits=new Set(["apples","bananas","oranges"]);
+
+            document.getElementById("demo").innerHTML="Date: "+(time instanceof Date)+"<br>"+
+            (cars instanceof Array)+
+            "<br>"+(car instanceof Map)+
+            "<br>"+(fruits instanceof Set);
+        </script>
+    </body>
+</html>
