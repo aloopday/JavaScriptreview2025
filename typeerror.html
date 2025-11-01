@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p id="demo"></p>
+        <script>
+            try{
+                Anna(5);
+            }
+            catch(err){
+                let text =err.name+"<br>"+err.message;
+                document.getElementById("demo").innerHTML=text;
+            }
+        </script>
+    </body>
+</html>
