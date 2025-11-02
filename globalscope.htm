@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>JavaScript Scope</h2>
+        <p>A Global variable can be accessed from any script or function.</p>
+        <p>All scripts and functions in the same web page can access a variable with global scope.</p>
+        <p id="demo"></p>
+        <script>
+            let carName="Tesla";
+            myFunction();
+            function myFunction(){
+                document.getElementById("demo").innerHTML="I can display "+carName;
+            }
+        </script>
+    </body>
+</html>

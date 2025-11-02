@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p>Each JavaScript function have their own scope.</p>
+        <p>Variables declared with var,let and const are quite similar when
+            declared inside a function.
+        </p>
+        <p><b>CarName</b> is undefined outside myFunction():</p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            myFunction();
+
+            function myFunction(){
+                let carName="Tesla";
+                document.getElementById("demo1").innerHTML =typeof carName + " "+carName;
+
+            }
+            document.getElementById("demo2").innerHTML=typeof carName;
+        </script>
+    </body>
+</html>
