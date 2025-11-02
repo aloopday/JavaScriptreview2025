@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>In HTML, global variable defined with 
+            <b>let</b>,will not become window variables.
+        </p>
+        <p id="demo"></p>
+        <script>
+            let carName="Toyota";
+
+            //code here can not use window.carName
+            document.getElementById("demo").innerHTML="I can not display " +window.carName;
+        </script>
+    </body>
+</html>
