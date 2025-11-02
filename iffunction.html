@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const hour =new Date().getHours();
+            let greeting;
+            if(hour<18){
+                greeting="Good day";
+            }else{
+                greeting="Good evening";
+            }
+            document.getElementById("demo").innerHTML=greeting;
+        </script>
+    </body>
+</html>
