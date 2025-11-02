@@ -13,6 +13,12 @@
         //Display x and y
         //Notice ,due to y is initialized in the var ,so  var will not be hoisted 
         var y=7; //Initialize y
+
+        /*
+        This is because only the declaration(var y), not the initalization(=7) is hoisted to the top.
+        Because of hoisting ,y has been declared before it is used, but because 
+        initializations are not hoisted, the value of y is undefied
+        */
         </script>
       
     </body>
