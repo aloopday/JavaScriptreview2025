@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>With "Use strict"</h2>
+        <h3>Writing to a read-only property is not allowed.</h3>
+        <p>Use F12 to debug</p>
+        <script>
+            "use strict";
+            const obj={};
+            object.defineProperty(obj, "x",{value:0, writable:false});
+            obj.x=3.14;// This will cause an error
+        </script>
+    </body>
+</html>

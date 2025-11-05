@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Silent errors will not stop your program</p>
+        <p id="demo"></p>
+        <script>
+            let result1 =('5'+'2');// JavaScript coerces types differently per operator.
+            let result2=('5'-'2');// Type coercion hides bugs. Program continues, but logic is wrong.
+            document.getElementById("demo").innerHTML=result1 +"<br>"+result2;
+        </script>
+    </body>
+</html>

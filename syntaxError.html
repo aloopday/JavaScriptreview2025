@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    </head>
+    <body>
+        <p>Syntax errors are not catchable by try ...catch.</p>
+        <p id="demo"></p>
+        <script>
+            try{
+                let x=Math.round(4.6;)
+            }
+            catch(err){
+                let text =err.name +" "+err.description;
+                document.getElementById("demo").innerHTML=text;
+                
+            }
+        </script>
+    </body>
+</html>
