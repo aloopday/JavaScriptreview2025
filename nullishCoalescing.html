@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+
+    </head>
+    <body>
+        <h1>JavaScript Operators</h1>
+        <h2>Nullish Colaescing</h2>
+        <h2>The ?? Operator</h2>
+        <p> the ?? operator returns the right operand when the left operand is nullish </p>
+        <p id="demo"></p>
+        <script>
+            let name =null;
+            let text ="missing";
+            let result = name ?? text;
+            document.getElementById("demo").innerHTML="The name is " + result;
+        </script>
+    </body>
+</html>
