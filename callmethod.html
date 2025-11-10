@@ -6,10 +6,12 @@
     <body>
         <p>This example calls the fullName method of person, using it on person1:</p>
         <p id="demo"></p>
+        <p id="demo1"></p>
+        <p>The call()Method with Arguments|The call() method can accept arguments:</p>
         <script>
             const person={
-                fullName: function(){
-                    return this.firstName + " "+this.lastName;
+                fullName: function(city,country){
+                    return this.firstName + " "+this.lastName+ "is from "+city+" "+country;
                 }
             }
 
@@ -21,7 +23,8 @@
                 firstName:"Alex",
                 lastName:"Wong"
             }
-            document.getElementById("demo").innerHTML=person.fullName.call(person1);
+            document.getElementById("demo").innerHTML=person.fullName.call(person1,"HongKong", "China");
+            document.getElementById("demo1").innerHTML=person.fullName.call(person2,"Shenzhen","Usa");
         </script>
     </body>
 </html>
