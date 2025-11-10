@@ -3,6 +3,8 @@
     <body>
        <p>In HTML the value of <b>this</b>, in a global function, is the window object.</p>
        <p id="demo"></p>
+       <p>invoking a function as global function, causes the value of this to be the global object.</p>
+       <p>Using the window object as a variable can easily crash your program.</p>
        <script>
         let x=myFunction();
         function myFunction(){
