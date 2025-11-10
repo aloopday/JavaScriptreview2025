@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const person={
+                fullName: function(city,country){
+                    return this.firstName + " "+this.lastName+"is from "+city +" "+country;
+
+                }
+            }
+            const person1={
+                firstName:"Charles",
+                lastName:"Wong"
+            }
+            document.getElementById("demo").innerHTML=person.fullName.apply(person1,["Hong Kong ","China"]);
+        </script>
+    </body>
+</html>
