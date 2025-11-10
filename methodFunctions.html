@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>The fullName property is a methodL</p>
+        <p id="demo"></p>
+        <script>
+            const myObject ={
+                firstName:"Charles",
+                lastName:"Wong",
+                fullName: function(){
+                    return this.firstName +" "+this.lastName;
+                }
+
+            }
+            document.getElementById("demo").innerHTML=myObject.fullName();
+        </script>
+    </body>
+</html>
