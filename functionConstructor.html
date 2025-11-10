@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+
+    </head>
+    <body>
+        <p>In this example, myFunction is a function constructor:</p>
+        <p id="demo"></p>
+        <p>A constructor invocation creates a new object. The new object inherits the properties and 
+            methods from its constructor.
+        </p>
+        <p>The this keyword in the constructor does not have a value.
+            The value of <b>this</b> will be the new object created when the function is invoked.
+            
+        </p>
+        <script>
+            function myFunction(arg1, arg2){
+                this.firstName=arg1;
+                this.lastName=arg2;
+            }
+            const myObj=new myFunction("charles","wong")
+            document.getElementById("demo").innerHTML=myObj.firstName;
+
+        </script>
+    </body>
+</html>
