@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Click the button to execute the "Hello " function again,</p>
+   <button id="btn">Click me</button>
+   <p id="demo"></p>
+   <script>
+    let hello=function(){
+        document.getElementById("demo").innerHTML+=this;
+
+    }
+    // The window object calls the function:
+    window.addEventListener("load",hello);
+    // a BUTTON OBJECT CALLS THE FUNCTION:
+    document.getElementById("btn").addEventListener("click",hello);
+   </script>
+    </body>
+</html>
