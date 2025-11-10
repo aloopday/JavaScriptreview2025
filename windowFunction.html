@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Global functions automatically window methods.Invoking myFunction() is the same as 
+            incoking window.myFunction().
+        </p>
+        <p id="demo"></p>
+        <script>
+            function myFunction(a,b){
+                return a *b;
+            }
+            document.getElementById("demo").innerHTML=window.myFunction(15,2);
+        </script>
+    </body>
+</html>
