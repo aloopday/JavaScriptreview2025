@@ -7,8 +7,9 @@
         <p>In a function, by default, <b>this</b> is the global object.</p>
         <p>In this example, the global object is the <b>window object</b></p>
         <p id="demo"></p>
+        <p>Strict mode does not allow default binding, so <b>this </b>is: </p>
         <script>
-
+            "use strict";
             document.getElementById("demo").innerHTML="This is :"+myFunction();
             function myFunction(){
                 return this;
