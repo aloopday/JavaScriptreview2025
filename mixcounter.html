@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Initiate counter
+            let counter=0;
+            //Function to increment counter
+            function add(){
+                let counter=0;
+                counter +=1;
+            }
+            //call add() 3 times;
+            add();
+            add();
+            add();
+            //the result is not 3 because you mix up the global and local counter
+            document.getElementById("demo").innerHTML="The counter is: "+counter;
+            //it did not work because we display the glocal counter instead of the local counter;
+           // We can remove the gloabal
+        </script>
+    </body>
+</html>

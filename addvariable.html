@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Function to increment counter
+            function add(){
+                let counter=0;
+                counter +=1;
+                return counter;
+            }
+            let x=0;
+            // Call add() 3 times
+            x =add();
+            x=add();
+            x=add();
+            //The counter should now be 3, but it is 1.
+            document.getElementById("demo").innerHTML="The counter is : "+ x;
+        </script>
+    </body>
+</html>
