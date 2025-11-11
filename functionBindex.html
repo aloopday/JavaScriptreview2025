@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>this example will try to display </p>
+        <p id="demo"></p>
+        <script>
+            const person={
+                firstName:"charles",
+                lastName:"Wong",
+                display: function(){
+                    let x=document.getElementById("demo");
+                    x.innerHTML=this.firstName +" "+this.lastName;
+                }
+            }
+            setTimeout(person.display,3000);
+        </script>
+    </body>
+</html>
