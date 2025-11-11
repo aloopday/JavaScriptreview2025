@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p id="demo">0</p>
+        <button type="button" onclick="myFunction()">count!</button>
+        <script>
+            function myCounter()
+{
+    let counter =0;
+    return function(){
+        counter ++;
+        return counter;
+    };}
+    const add =myCounter();
+    function myFunction(){
+        document.getElementById("demo").innerHTML=add();
+
+    }
+    
+     </script>
+    </body>
+</html>
