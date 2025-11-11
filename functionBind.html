@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <p>The member object borrows the fullName method from person.</p>
+    <p id="demo"></p>
+    <script>
+        const person={
+            firstName:"Charles",
+            lastName:"Wang",
+            fullName: function(){
+            return this.firstName+" "+this.lastName;
+            }
+
+        }
+        const member={
+            firstName:"Alex",
+            lastName:"Wong",
+
+        }
+        let fullName=person.fullName.bind(member);
+        document.getElementById("demo").innerHTML=fullName();
+    </script>
+</html>
