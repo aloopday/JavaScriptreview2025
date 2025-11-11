@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const person={
+                firstName:"Charles",
+                lastName:"Wong",
+                display: function(){
+                    let x =document.getElementById("demo");
+                    x.innerHTML =this.firstName +" "+this.lastName;
+                }
+            }
+            let display=person.display.bind(person);
+            setTimeout(display,3000);
+        </script>
+    </body>
+</html>
