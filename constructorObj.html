@@ -18,8 +18,14 @@
 
             //Create a Peerson object
             const myFather=new Person("Charles","Wong",50,"dark");
+            const mySister=new Person("Isabella","wong",9,"dark");
+            const myMother=new Person("Oliva","Wang",8,"dark");
+
             //display age
-            document.getElementById("demo").innerHTML="My father is " +myFather.age+". ";
+            document.getElementById("demo").innerHTML="My father is " +myFather.age+". "+"<br>"+
+            myMother.firstName+" is "+myMother.age+"<br>"+
+            mySister.firstName+" eyeColor is  "+mySister.eyeColor;
         </script>
+
     </body>
 </html>
