@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const fruits=[
+                ["apples",300],
+                ["pears",800],
+                ["bananas",5500]
+            ];
+            const myObj=Object.fromEntries(fruits);
+            document.getElementById("demo").innerHTML=myObj.apples;
+        </script>
+    </body>
+</html>
