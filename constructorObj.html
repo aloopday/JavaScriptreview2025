@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Constrructor Function for Person objects
+            function Person(first,last,age,eye){
+                this.firstName=first;
+                this.lastName=last;
+                this.age=age;
+                this.eyeColor=eye;
+            }
+            // In the construuctopor function, "this" has no value.
+            //The value of "this" will become the new obbject when a new object is created.
+
+            //Create a Peerson object
+            const myFather=new Person("Charles","Wong",50,"dark");
+            //display age
+            document.getElementById("demo").innerHTML="My father is " +myFather.age+". ";
+        </script>
+    </body>
+</html>
