@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an Object:
+            const person={
+                firstName:"Alex",
+                lastName:"Wong",
+                age:3,
+                language:"en"
+            }
+            //Create new Object
+            const man=Object.create(person);
+            man.firstName="Isabella";
+            //display properties
+            document.getElementById("demo").innerHTML=person.firstName+" and "+
+            man.firstName;
+        </script>
+    </body>
+</html>
