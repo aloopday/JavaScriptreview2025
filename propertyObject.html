@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Constructor function for Person Objects
+            function Person(first,last,age,eye){
+                this.firstName=first;
+                this.lastName=last;
+                this.age=age;
+                this.eyeColor=eye;
+            }
+
+            //Create 2 Person Objects
+            const myFather =new Person("John","Doe",50,"blue");
+            const myMother=new Person("Sally","wong",48,"Green");
+            //will not Work
+            Person.nationnality="USA";
+            //Display Nationality
+            document.getElementById("demo").innerHTML="The nationality of my father is "+
+            myFather.nationnality;
+        </script>
+    </body>
+</html>

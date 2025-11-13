@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Constructor function for Person Objects
+            function Person(first,last,age,eye){
+                this.firsName=first;
+                this.lastName=last;
+                this.age=age;
+                this.eyeColor="black";
+            }
+            //Create 2 Person Objects
+            const myFather=new Person("charles","wang",40,"black");
+            const myMother=new Person("Olivia","wang",88,"black");
+
+            //Add a new Property
+            Person.prototype.nationality="China";
+            //Display new Property
+            document.getElementById("demo").innerHTML=
+            "The nationality of myMother is "+myMother.nationality+ ".";
+        </script>
+    </body>
+</html>
