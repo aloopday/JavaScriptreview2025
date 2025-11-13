@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Constructor function for person Objects
+            function Person(first,last,age,eye){
+                this.firstName=first;
+                this.lastName=last;
+                this.age=age;
+                this.eyeColor=eye;
+            }
+            //Create 2 person objects
+            const myFather=new Person("Charles","Wong",50,"black");
+            const myMother=new Person("Isabella","Wong",57,"Black");
+            //Add nationality to first object
+            myFather.nationality="Hong Kong ";
+
+            document.getElementById("demo").innerHTML=myFather.nationality;
+
+        </script>
+    </body>
+</html>
