@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <h2>Map Destructuring</h2>
+        <p>Move array variables into singel variables</p>
+        <p id="demo"></p>
+        <script>
+            //create a Map
+            const fruits=new Map([
+                ["apples",500],
+                ["bananas",900],
+                ["oranges",800]
+            ])
+
+            //Destructing
+            let text ="";
+            for (const [key,value] of fruits){
+                text +="<p>"+key + " is "+value;
+            }
+
+            //Display the values
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </head>
+</html>
