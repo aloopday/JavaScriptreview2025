@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an Object
+            const person={
+                firstName:"Charles",
+                lastName:"wang",
+                age:99,
+            };
+            //;Destructuring
+            let {lastName, firstName} =person;
+            //didpaly Primitive Values
+            document.getElementById("demo").innerHTML=firstName + " "+lastName;
+        </script>
+    </body>
+</html>

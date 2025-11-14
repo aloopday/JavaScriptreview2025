@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an Object
+            const person={
+                firstName: "Charels",
+                lastName:"wang",
+                age:60
+            };
+            //Destructring
+            let {firstName,lastName,country="US",eyeColor="black"}=person;
+            // Display primitive Values
+            document.getElementById("demo").innerHTML=firstName + " "+lastName + " "+country +"<br>"+
+            "Eye Color is "+eyeColor;
+
+        </script>
+    </body>
+</html>
