@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>To make is simple to use Objeccts in a loops</p>
+        <p id="demo"></p>
+        <script>
+            const fruits={Bananas:300,Oranges:200,Apples:500};
+            let txt="";
+            for(let[fruit,amount] of Object.entries(fruits)){
+                txt+=fruit+":"+amount+"<br>";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>
