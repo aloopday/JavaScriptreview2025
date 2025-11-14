@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create Target Object
+            const person1 ={
+                firstName:"Charles",
+                lastName:"Wang",
+                age:50,
+                eyeColor:"black"
+            };
+            //Create Source Object
+            const person2={firstName: "Olivia",lastName:"Wang"};
+            //Assign Source to Target
+            Object.assign(person1,person2);
+            //Display Target
+            let text=Object.entries(person1);
+            document.getElementById("demo").innerHTML=text;
+
+        </script>
+    </body>
+</html>
