@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an Object
+            const person={
+                firstName:"John",
+                lastName:"Wang",
+                age:79
+            };
+            //Destrucuring
+            let {lastName:name}=person;
+
+            //Display Primitive Value
+            document.getElementById("demo").innerHTML=name;
+        </script>
+    </body>
+</html>
