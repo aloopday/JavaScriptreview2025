@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an Object
+            const person={
+                firstName:"Charles",
+                lastName:"Wang",
+                language:"En"
+            };
+            // Change the language Property
+            Object.defineProperty(person,"language",{enumerable:false});
+            //Display all Enumerable Properties
+            document.getElementById("demo").innerHTML=Object.keys(person);
+        </script>
+    </body>
+</html>
