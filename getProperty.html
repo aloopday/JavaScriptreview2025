@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an Object:
+            const person={firstName:"Charles",lastName:"wang"};
+            //Define a getter
+            Object.defineProperty(person,"fullName",{
+                get: function(){
+                    return this.firstName+ " "+this.lastName;
+                }
+            });
+
+            //Display fullName
+            document.getElementById("demo").innerHTML=person.fullName;
+        </script>
+    </body>
+</html>

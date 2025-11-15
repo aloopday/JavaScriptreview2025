@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <h2>
+        JavaScript getters and setters
+    </h2>
+    <p>This example uses a lang property to set the value of 
+        the language property.
+    </p>
+    <p id="demo"></p>
+    <script>
+        //Create an object:
+        const person={
+            firstName:"Charles",
+            lastName:"wang",
+            language:"No",
+            set lang(value){
+                this.language=value;
+            }
+        };
+        //Set a property using set:
+        person.lang="en";
+        //Display data from the object:
+        document.getElementById("demo").innerHTML=person.language;
+    </script>
+</html>
