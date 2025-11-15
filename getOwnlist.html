@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an Object:
+            const person={
+                firstName:"John",
+                lastName:"Doe",
+                language:"en"
+            }
+            //Display all properties
+            document.getElementById("demo").innerHTML=Object.getOwnPropertyNames(person);
+        </script>
+    </body>
+</html>
