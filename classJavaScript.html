@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            class Car{
+                constructor(name,year){
+                    this.name=name;
+                    this.year=year;
+                }
+            }
+            const myCar1=new Car("Tesla",2023);
+            const myCar2=new Car("Audi",2028);
+           document.getElementById("demo").innerHTML=myCar1.name+"<br>"+myCar2.name
+        </script>
+    </body>
+</html>
