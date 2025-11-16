@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const fruits=["Banana","Orange","Apple","Mango"];
+            Object.preventExtensions(fruits);
+            //TEST ERROR
+            let text="";
+            try{
+                fruits.push("kiwi");
+            }
+            catch(err){
+                text=err;
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
