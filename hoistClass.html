@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //You cannot use the class yet
+            //myCar=new Car("toyota") will raise an error.
+            class Car{
+                constructor(brand){
+                    this.carName=brand;
+                }
+            }
+            //Now you can use the class;
+            const myCar=new Car("benz");
+            document.getElementById("demo").innerHTML=myCar.carName;
+        </script>
+    </body>
+</html>
