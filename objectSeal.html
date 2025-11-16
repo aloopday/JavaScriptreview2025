@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            "use strict"
+            //Create Object
+            const person={
+                firstName:"Charles",
+                lastName:"Wang",
+                age:66,
+                eyeColor:"Black"
+            };
+            //Seal Object
+            Object.seal(person)
+            //Test Error
+            let text ="";
+            try{
+                delete person.age;
+                text=Object.values(person);
+            }
+            catch(err){
+                text=err;
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>

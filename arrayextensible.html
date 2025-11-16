@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create Array
+            const fruits=["Banana","Orange","Apples","Mango"];
+            //Prevent Extensions
+            Object.preventExtensions(fruits);
+            //This will return false
+            let answer =Object.isExtensible(fruits);
+            document.getElementById("demo").innerHTML=answer;
+        </script>
+    </body>
+</html>
