@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create Object
+            const fruits=["Banana","Orange","Apple","Mango"];
+            // Freeze Object
+            Object.freeze(fruits);
+            //This will return true
+            let answer=Object.isFrozen(fruits);
+            document.getElementById("demo").innerHTML=answer;
+        </script>
+    </body>
+</html>

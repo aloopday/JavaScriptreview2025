@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create Object
+            const person={firstName:"Charles",
+        lastName:"wang"};
+        //Seal Object
+        Object.seal(person);
+        //This will return true
+        let answer=Object.isSealed(person)
+        document.getElementById("demo").innerHTML=answer;
+        </script>
+    </body>
+</html>

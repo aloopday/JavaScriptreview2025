@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create Array
+            const fruits=["Banana","Orange","Apple","Mango"];
+            //Freeze Array
+            Object.freeze(fruits);
+            //Test Error
+            let text
+            try{
+                fruits.push("kiwi");
+                text=fruits;
+            }catch(err){
+                text=err;
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
