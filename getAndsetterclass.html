@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            class Car {
+                constructor(brand){
+                    this.carname=brand;
+                }
+                get cnam(){
+                    return this.carname;
+                }
+                set cnam(x){
+                    this.carname=x;
+                }
+            }
+            const myCar=new Car("Ford");
+            document.getElementById("demo").innerHTML=myCar.cnam;
+            //even if the getter is a method, you do not use parentheses
+            //When you want to get the property value.
+        </script>
+    </body>
+</html>
