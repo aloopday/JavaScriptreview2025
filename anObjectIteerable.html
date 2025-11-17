@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an object
+            myNumbers={};
+            //make it iterable
+            myNumbers[Symbol.iterator]=function(){
+                let n=0;
+                done=false;
+                return{
+                    next(){
+                        n +=10;
+                        if(n==100){done=true}
+                        return{value:n ,done:done};
+                    }
+                };
+            }
+
+            //create an Iterator
+            let iterator =myNumbers[Symbol.iterator]();
+            let text=""
+            while(true){
+                const result=iterator.next();
+                if(result.done) break;
+                text +=result.value+"<br>";
+            }
+            document.getElementById("demo").innerHTML =text;
+        </script>
+    </body>
+</html>
