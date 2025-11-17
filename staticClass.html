@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            class Car{
+                constructor(name){
+                    this.name =name;
+                }
+                static hello(){
+                    return "Hello!!";
+                }
+            }
+            const myCar=new Car("Tesla");
+            //You can call 'hello()' on the Car Class:
+            document.getElementById("demo").innerHTML=Car.hello();
+            //But Not on a Car Object:
+            //document.getElementById("demo").innerHTML=myCar.hello();
+            //this will raise an error.
+            
+        </script>
+    </body>
+</html>
