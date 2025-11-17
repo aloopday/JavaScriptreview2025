@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create a Map
+            const fruits =new Map([
+                ["apples",500],
+                ["bananas",300],
+                ["oranges",100]
+            ]);
+
+            //Iterate over the map elements
+            let text="";
+            for(const x of fruits){
+                text += x+"<br>";
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
