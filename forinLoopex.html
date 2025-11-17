@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <p id="demo"></p>
+    <script>
+        const person={fname:"Charles",lname:"Wang",age:39};
+        let txt ="";
+        for(let x in person){
+            txt += person[x]+ " ";
+        }
+        document.getElementById("demo").innerHTML=txt;
+        </script>
+</html>
