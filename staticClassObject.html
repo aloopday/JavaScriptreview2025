@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            class Car{
+                constructor(name){
+                    this.name=name;
+                }
+                static hello(x){
+                    return "Hello"+x.name;
+                }
+            }
+
+            const myCar =new Car("Tesla");
+            document.getElementById("demo").innerHTML=Car.hello(myCar);
+        </script>
+    </body>
+</html>
