@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <p id="demo"></p>
+    <p> fine-grained control</p>
+    <script>
+        function* myStream(){
+            // return {value:1, done:false}
+            yield 1;
+            // return {value:2 done:false}
+            yield 2;
+            // return {value:3,done:true}
+            return 3;
+        }
+
+        //Create a Generator
+        let myGenerator=myStream();
+        let text="";
+        //loop the Generator
+        for (let value of myGenerator){
+            text +=value+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</html>
