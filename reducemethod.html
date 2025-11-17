@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function myFunc(total,num){
+                return total +num;
+            }
+            //create an Iteratro
+            const myIterator=Iterator.from([175,50,25]);
+            //Reduce the Iterator
+            let result =myIterator.reduce(myFunc);
+            document.getElementById("demo").innerHTML="The sum of all items is: "+result;
+        </script>
+    </body>
+</html>

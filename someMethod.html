@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create Iterator
+            const myIterator =Iterator.from("123456789");
+            //Is some Elements greater than 7?
+            let result=myIterator.some(x=> x>7);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+</html>

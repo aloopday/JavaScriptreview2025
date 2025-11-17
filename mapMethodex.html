@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an iterator
+            const myIterator=Iterator.from("123456789");
+            //Map the Iterator
+            const mappedIterator=myIterator.map(x => x*2);
+
+            //Iterate over all elements
+            let text ="";
+            for(const x of mappedIterator){
+                text +=x +"<br>";
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>

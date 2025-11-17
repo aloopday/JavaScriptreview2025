@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an iterator
+            const myIterator=Iterator.from([3,10,18,38,20,98]);
+            //Find first greater than 18
+            let result =myIterator.find(x =>x >19);
+            document.getElementById("demo").innerHTML=result;
+        </script>
+    </body>
+    
+</html>
