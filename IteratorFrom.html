@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Create an iterator
+            const myIterator=Iterator.from([1,2,3]);
+            //Iterate over the elements
+            let text =""
+            for (const x of myIterator){
+                text += x + "<br>";
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
