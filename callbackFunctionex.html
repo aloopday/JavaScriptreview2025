@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function myDisplayer(some){
+                document.getElementById("demo").innerHTML=some;
+            }
+            function myCalculator(num1,num2,myCallback){
+                let result=num1 *num2;
+                myCallback(result);
+            }
+            myCalculator(9,5,myDisplayer);
+        </script>
+    </body>
+</html>
