@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            async function run(){
+                const module=await import("./math.js");
+                let result =module.add(5,6);
+                document.getElementById("demo").innerHTML = result;
+            }
+            run();
+        </script>
+    </body>
+</html>
