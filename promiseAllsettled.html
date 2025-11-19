@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p> Promise.allSettled() means "Just run all promises." I don't care the results</p>
+        <script>
+            //Create a Promise
+            const myPromise1 = new Promise((resolve,reject) =>{
+                setTimeout(resolve,200,"King");
+            });
+            //Create another Promise
+            const myPromise2 =new Promise((resolve,reject)=>{
+                setTimeout(resolve,100,"Queen");
+            });
+            //Settle All 
+            Promise.allSettled([myPromise1,myPromise2]).then((results)=>
+        results.forEach((x)=> myDisplay(x.status)),);
+
+        //Function to run 
+        function myDisplay(some){
+            document.getElementById("demo").innerHTML +=some;
+        }
+        </script>
+</html>
