@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <div id="main">
+            <p>This is Charles</p>
+            <p>This is Diana</p>
+            <p>This is Edward</p>
+        </div>
+        <p id="demo"></p>
+        <script>
+            const x = document.getElementById("main");
+            const y = x.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML="this is the target <br>: " + y[1].innerHTML;
+        </script>
+    </body>
+</html>
