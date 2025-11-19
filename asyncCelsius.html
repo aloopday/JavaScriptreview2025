@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>溫度轉換</title>
+</head>
+<body>
+    <h1>華氏 69°F 轉攝氏：</h1>
+    <p id="demo">計算中...</p>
+
+    <script type="module">
+        async function run(x) {
+            try {
+                const module = await import("./temperature.js");
+                const celsius = module.toCelsius(x);
+                document.getElementById("demo").textContent = celsius + "°C";
+            } catch (err) {
+                console.error("載入失敗！", err);
+                document.getElementById("demo").textContent = "出錯啦！打開 console 看錯誤";
+            }
+        }
+        run(69);
+    </script>
+</body>
+</html>
