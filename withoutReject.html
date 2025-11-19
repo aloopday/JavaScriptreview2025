@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            async function myDisplay(){
+                let myPromise=new Promise(function(resolve){
+                    resolve ("Hello Charles");
+                });
+                document.getElementById("demo").innerHTML=await myPromise;
+
+            }
+            myDisplay();
+        </script>
+    </body>
+</html>
