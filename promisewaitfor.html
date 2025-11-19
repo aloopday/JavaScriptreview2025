@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const myPromise=new Promise(function(myResolve,myReject){
+                setTimeout(function(){myResolve("I love You!!");}   ,3000);
+            })
+            myPromise.then(function(value){
+                document.getElementById("demo").innerHTML=value;
+            });
+        </script>
+    </body>
+</html>
