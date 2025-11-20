@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p class="exam">This is a exam</p>
+        <p class="exam">Hello Hong Kong </p>
+        <p id="demo"></p>
+        <script>
+            const x=document.querySelectorAll("p.exam");
+            document.getElementById("demo").innerHTML=x[0].innerHTML+ "<br>"+
+            x[1].innerHTML;
+        </script>
+    </body>
+</html>
