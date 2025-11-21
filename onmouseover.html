@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>The onmouseover Attribute</h2>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+            Mouse over this .
+        </div>
+
+        <script>
+            function mOver(obj){
+                obj.innerHTML="Thanks"
+            }
+            function mOut(obj){
+                obj.innerHTML="Mouse over this"
+            }
+        </script>
+    </body>
+</html>
