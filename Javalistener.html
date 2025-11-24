@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Try resizing this browser window to trigger the "resize " envent handler.</p>
+        <p id="demo"></p>
+        <script>
+            window.addEventListener("resize",function(){
+                document.getElementById("demo").innerHTML=Math.random();
+            });
+        </script>
+    </body>
+</html>
