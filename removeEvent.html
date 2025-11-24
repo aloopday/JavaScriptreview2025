@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+           #myDIV{
+            background-color:aqua;
+            border:1px solid;
+            padding:50px;
+            color:white;
+            font-size:20px;
+           }
+        </style>
+
+    </head>
+    <body>
+        <p>Event remove</p>
+        <div id="myDIV">
+            <p>This div is a demo</p>
+            <p>click the button to remove the dive's event handler.</p>
+            <button onclick="removeHandler()" id="myBtn">Remove</button>
+        </div>
+        <p id="demo"></p>
+        <script>
+document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.random();
+}
+
+function removeHandler() {
+  document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+}
+</script>
+    </body>
+</html>
