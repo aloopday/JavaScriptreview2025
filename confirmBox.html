@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>This is is confirmed box demo.</p>
+       
+       <button onclick="myFunction()">Click me </button>
+        <p id="demo"></p>
+       <script>
+        function myFunction(){
+              let txt;
+        if(confirm("Press a button!")){
+            txt="You pressed OK!";
+        }else{
+            txt="You pressed Cancel!";
+        }
+        document.getElementById("demo").innerHTML=txt;
+
+        }
+      
+       </script>
+    </body>
+</html>
