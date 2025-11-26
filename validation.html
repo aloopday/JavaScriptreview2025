@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Enter a number and click ok:</p>
+        <input id="id1" type="number" max="100">
+        <button onclick="myFunction()">Test</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                let txt;
+                if(document.getElementById("id1").validity.rangeOverflow){
+                    txt ="Value too larger";
+                }else{
+                    txt="Input Ok";
+                }
+                document.getElementById("demo").innerHTML=txt;
+            }
+        </script>
+    </body>
+</html>
