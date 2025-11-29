@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>Parsing a JSON Array.</h2>
+        <p>Data written as an JSON array will be parsed into a JavaScript</p>
+        <p id="demo"></p>
+        <script>
+            const text='["Alex","Isabella","Olivia","Charles"]';
+            const myArr=JSON.parse(text);
+
+            let member="";
+            for(let i=0; i<myArr.length;i++){
+                member +=myArr[i]+"<br>";
+            }
+            document.getElementById("demo").innerHTML=member;
+        </script>
+    </body>
+</html>
