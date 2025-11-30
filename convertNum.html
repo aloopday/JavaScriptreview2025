@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>JSON.stringify() can convert numbers to strings</p>
+        <p id="demo"></p>
+        <script>
+            const num=123e-5;
+            const myJSON=JSON.stringify(num);
+            document.getElementById("demo").innerHTML=myJSON;
+        </script>
+    </body>
+</html>
