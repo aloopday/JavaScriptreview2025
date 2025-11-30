@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>JSON.stringify() converts date objects into strings.</h2>
+        <p id="demo"></p>
+        <script>
+            const obj={name:"Alex",today:new Date(),city:"Shen Zhen"};
+            const myJSON =JSON.stringify(obj);
+            document.getElementById("demo").innerHTML =document.getElementById("demo").innerHTML=
+            myJSON;
+        </script>
+    </body>
+</html>

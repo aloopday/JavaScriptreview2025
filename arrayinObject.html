@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2> Access Array Values</h2>
+        <p id="demo"></p>
+        <script>
+            const myJSON='{"name":"charles","age":39,"cars":["tesla","toyota","benz"]}';
+            const myObj=JSON.parse(myJSON);
+            document.getElementById("demo").innerHTML=myObj.cars[1];
+        </script>
+    </body>
+</html>

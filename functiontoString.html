@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h2>JSON.stringify() will remove any functions from an object.</h2>
+        <p>Convert functions into strings to keep them in the JSON object.</p>
+        <p id="demo"></p>
+        <script>
+            const obj={name:"Charles",age:function(){return 30;},city:"BeiJing"};
+            obj.age=obj.age.toString();
+            const myJSON=JSON.stringify(obj);
+            document.getElementById("demo").innerHTML=myJSON;
+        </script>
+    </body>
+</html>

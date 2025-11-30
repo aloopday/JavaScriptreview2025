@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h2>Loop through myJSON</h2>
+        <p id="demo"></p>
+        <script>
+            const myJSON='{"name":"Charles","age":39,"cars":["Ford","Tesla","Xiaomi"]}';
+            const myObj=JSON.parse(myJSON);
+            let text="";
+            for(let i=0;i<myObj.cars.length;i++){
+                text += myObj.cars[i]+"<br>";
+            }
+            document.getElementById("demo").innerHTML=text;
+        </script>
+
+    </body>
+</html>
