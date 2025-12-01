@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h2>Finding HTML Elements by Tag Name</h2>
+        <p class="city">Hello Beijing</p>
+        <p class="city">Hello Hong kong </p>
+        <p class="city">Hello ShangHai</p>
+        <p id="demo"></p>
+        <script>
+            $(document).ready(function(){
+                // html class
+               // let myElements=$(".city");
+               let myElements=$("p.city"); // css selector
+
+                $("#demo").text("The first text with class='city' is :"+myElements[0].innerHTML)
+            })
+        </script>
+
+    </body>
+</html>
