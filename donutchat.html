@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js">
+        </script>
+    </head>
+    <body>
+
+        <div id="myPlot" style="width:100%;max-width:700px"></div>
+
+        <script>
+            const xArray=["Italy","France","Spain","USA","UK"];
+            const yArray=[55,49,45,90,80];
+
+            const layout={title:"Production of the world"};
+
+            const data = [{
+        labels: xArray,
+        values: yArray,
+        type: "pie",
+        hole: 0.4   // makes it a donut chart; use 0 for regular pie
+    }];
+    Plotly.newPlot("myPlot",data,layout);
+        </script>
+
+    </body>
+</html>
