@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js">
+
+        </script>
+
+    </head>
+    <body>
+        <div id="myPlot" style="width:100%;max-width:700px">
+
+        </div>
+        <script>
+            const xArray=["Alex","Olivia","Charles","Isabella","Jody"];
+            const yArray=[55,49,44,24,15];
+
+            const layout={title:"Name statics"};
+
+            const data = [{labels:xArray, values:yArray, type:"pie"}];
+            Plotly.newPlot("myPlot",data,layout);
+
+        </script>
+
+    </body>
+</html>
